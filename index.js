@@ -3,7 +3,7 @@ const inputEle = document.getElementById("emailInput");
 const submitBtn = document.getElementById("submitBtn");
 const messageEle = document.querySelector(".message");
 
-const emailReg = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/i;
+const emailReg = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
 
 const submitHandler = (event) => {
   event.preventDefault();
