@@ -14,8 +14,6 @@ const submitHandler = (event) => {
   formEle.classList.remove("form-error");
   formEle.classList.remove("form-success");
 
-  console.log(userInput, { result: emailReg.test(userInput) });
-
   if (emailReg.test(userInput)) {
     messageEle.offsetWidth;
     formEle.classList.add("form-success");
