@@ -3,7 +3,7 @@ const inputEle = document.getElementById("emailInput");
 const submitBtn = document.getElementById("submitBtn");
 const messageEle = document.querySelector(".message");
 
-const emailReg = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/gi;
+const emailReg = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/i;
 
 const submitHandler = (event) => {
   event.preventDefault();
@@ -14,14 +14,16 @@ const submitHandler = (event) => {
   formEle.classList.remove("form-error");
   formEle.classList.remove("form-success");
 
+  console.log(userInput, { result: emailReg.test(userInput) });
+
   if (emailReg.test(userInput)) {
-    void messageEle.offsetWidth;
+    messageEle.offsetWidth;
     formEle.classList.add("form-success");
     messageEle.classList.add("success");
     messageEle.innerText = "Thank you. You email has been registered!";
     inputEle.value = "";
   } else {
-    void messageEle.offsetWidth;
+    messageEle.offsetWidth;
     formEle.classList.add("form-error");
     messageEle.classList.add("error");
     messageEle.innerText = "Please provide a valid email address.";
