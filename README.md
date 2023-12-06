@@ -11,8 +11,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/JimTK16/huddle-landing-page
-- Live Site URL: https://huddle-landing-page-by-jim.netlify.app/
+- Solution URL: https://github.com/JimTK16/ping-coming-soon-page/tree/main
+- Live Site URL: https://ping-coming-soon-page-by-jim.netlify.app/
 
 ## My process
 
@@ -26,4 +26,6 @@ Users should be able to:
 
 ### What I learned
 
-In this challenge, I learned more about the css background-image and its related setting like background-size, background-repeat. I tinkered with the svg files and see how they would change when I change the fill and stroke properties. I thought it would be an easy challenge at first, but I did learn more by doing this one. Overall, I like to thank the FEM team to provide this challenge for us to practice.
+This is a great challenge to learn more about JS and CSS. I managed to use flexbox in both mobile and desktop view, instead of flexbox for mobile and grid for desktop. I used 'order' property to move an element to end of the flexbox.
+
+The JS part is also a good practice for form validation and dom manipulation.
